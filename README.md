@@ -10,7 +10,7 @@ We release the code for distilling shufflenet based detector and **VGG11** based
 ## TODO
 We have accumulated the following to-do list, which we hope to complete in the near future
 - Still to come:
-  * [ ] Add more distilled models.
+  * [ ] Add more models(ResNet-FRCNN, FPN-FRCNN).
   * [ ] Implement SSD model distillation.
   * [ ] Combining the proposed method with model pruning/quantization method.
 
@@ -39,12 +39,20 @@ download trained VGG16-FRCNN model at [GoogleDrive](https://drive.google.com/fil
 and put it into data/VGG16-FRCNN/
 
 
-### Train 
+### Train
 currently only batch size of 1 is supported
 ```
 python trainval_net_sup.py --dataset pascal_voc --net vgg11 --bs 1 --nw 2 --lr 3e-3 --lr_decay_step 5 --cuda --s 1 --gpu 0
 ```
-models will be saved in ```./temp/vgg11/pascal_voc/xxx.pth```
+>models will be saved in ```./temp/vgg11/pascal_voc/xxx.pth```
+
+### Train without imitation (baseline training)
+currently only batch size of 1 is supported
+```
+python trainval_net_sup.py --dataset pascal_voc --net vgg11 --bs 1 --nw 2 --lr 3e-3 --lr_decay_step 5 --cuda --s 1 --gpu 0 --tfi True
+```
+>models will be saved in ```./temp/vgg11/pascal_voc/xxx.pth```
+>Note the imitation loss weight and warm up step can be further tuned with --ilw and --ws
 
 ### Test
 ```
@@ -56,8 +64,8 @@ change ```checksession```, ```checkepoch```, ```checkpoint``` to test specific m
 model    | #GPUs | batch size | learning_rate(lr) | lr_decay | max_epoch | mAP | ckpt
 -------------|--------|---------|--------|-----|------|-----|----
 VGG-16     | 1 | 1 | 1e-3 | 5   | 6   | 70.1 | [GoogleDrive](https://drive.google.com/file/d/1RB8wP0Pf7bMv_iArYomVOfq1ikTsaA2O/view?usp=sharing)
-VGG-11     | 1 | 4 | 4e-3 | 8   | 9   | 59.6 | [GoogleDrive](https://www.dropbox.com/s/cpj2nu35am0f9hp/faster_rcnn_1_9_2504.pth?dl=0)
-VGG-11-I   | 8 | 16| 1e-2 | 8   | 10   | 67.6 **+8.0** | [GoogleDrive](https://www.dropbox.com/s/cpj2nu35am0f9hp/faster_rcnn_1_9_2504.pth?dl=0)
+VGG-11     | 1 | 4 | 4e-3 | 8   | 9   | 59.6 | [GoogleDrive](https://drive.google.com/file/d/1dEsOcVxOmm8KTw3J3EwhPXeSABEP1TuN/view?usp=sharing)
+VGG-11-I   | 8 | 16| 1e-2 | 8   | 10   | 67.6 **+8.0** | [GoogleDrive](https://drive.google.com/file/d/1mIzuAv_cMTvaSEVRCF8OhS11Em7b-onB/view?usp=sharing)
 >models at max_epoch are reported
 
 >the numbers are different from the paper as they are independent running of the algorithm.
