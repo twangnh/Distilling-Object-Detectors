@@ -46,25 +46,25 @@ python trainval_net_sup.py --dataset pascal_voc --net vgg11 --bs 1 --nw 2 --lr 3
 ```
 
 ```
-[session 15][epoch  1][iter    0/10022] loss: 13.4238, loss_sup: 0.0000, lr: 6.00e-03
+[session 1][epoch  1][iter    0/10022] loss: 13.4238, loss_sup: 0.0000, lr: 6.00e-03
 			fg/bg=(15/241), time cost: 0.307381
 			rpn_cls: 0.7839, rpn_box: 0.4312, rcnn_cls: 12.0130, rcnn_box 0.1957 
-[session 15][epoch  1][iter  100/10022] loss: 2.1172, loss_sup: 0.0000, lr: 6.00e-03
+[session 1][epoch  1][iter  100/10022] loss: 2.1172, loss_sup: 0.0000, lr: 6.00e-03
 			fg/bg=(15/241), time cost: 17.871297
 			rpn_cls: 0.2372, rpn_box: 0.0492, rcnn_cls: 0.5382, rcnn_box 0.1475 
-[session 15][epoch  1][iter  200/10022] loss: 2.3993, loss_sup: 0.0000, lr: 6.00e-03
+[session 1][epoch  1][iter  200/10022] loss: 2.3993, loss_sup: 0.0000, lr: 6.00e-03
 			fg/bg=(27/229), time cost: 17.885193
 			rpn_cls: 0.0451, rpn_box: 0.3003, rcnn_cls: 2.5547, rcnn_box 0.5216 
-[session 15][epoch  1][iter  300/10022] loss: 1.6754, loss_sup: 0.0000, lr: 6.00e-03
+[session 1][epoch  1][iter  300/10022] loss: 1.6754, loss_sup: 0.0000, lr: 6.00e-03
 			fg/bg=(21/235), time cost: 17.856990
 			rpn_cls: 0.2837, rpn_box: 0.2542, rcnn_cls: 1.1131, rcnn_box 0.2073 
-[session 15][epoch  1][iter  400/10022] loss: 1.6178, loss_sup: 0.1145, lr: 6.00e-03
+[session 1][epoch  1][iter  400/10022] loss: 1.6178, loss_sup: 0.1145, lr: 6.00e-03
 			fg/bg=(23/233), time cost: 17.976755
 			rpn_cls: 0.3597, rpn_box: 0.0106, rcnn_cls: 0.7343, rcnn_box 0.2363 
-[session 15][epoch  1][iter  500/10022] loss: 1.4362, loss_sup: 9.6434, lr: 6.00e-03
+[session 1][epoch  1][iter  500/10022] loss: 1.4362, loss_sup: 9.6434, lr: 6.00e-03
 			fg/bg=(32/224), time cost: 17.911143
 			rpn_cls: 0.1783, rpn_box: 0.0235, rcnn_cls: 0.4522, rcnn_box 0.3731 
-[session 15][epoch  1][iter  600/10022] loss: 1.3638, loss_sup: 8.4568, lr: 6.00e-03
+[session 1][epoch  1][iter  600/10022] loss: 1.3638, loss_sup: 8.4568, lr: 6.00e-03
 			fg/bg=(18/238), time cost: 18.024369
 			rpn_cls: 0.4774, rpn_box: 0.1143, rcnn_cls: 0.4781, rcnn_box 0.1663 
 ```
@@ -88,9 +88,9 @@ change ```checksession```, ```checkepoch```, ```checkpoint``` to test specific m
 ###
 model    | #GPUs | batch size | learning_rate(lr) | lr_decay | max_epoch | mAP | ckpt
 -------------|--------|---------|--------|-----|------|-----|----
-VGG-16     | 1 | 1 | 1e-3 | 5   | 6   | 70.1 | [GoogleDrive](https://drive.google.com/file/d/1RB8wP0Pf7bMv_iArYomVOfq1ikTsaA2O/view?usp=sharing)
-VGG-11     | 1 | 4 | 4e-3 | 8   | 9   | 59.6 | [GoogleDrive](https://drive.google.com/file/d/1dEsOcVxOmm8KTw3J3EwhPXeSABEP1TuN/view?usp=sharing)
-VGG-11-I   | 8 | 16| 1e-2 | 8   | 10   | 67.6 **+8.0** | [GoogleDrive](https://drive.google.com/file/d/1mIzuAv_cMTvaSEVRCF8OhS11Em7b-onB/view?usp=sharing)
+VGG-16     | 1 | 1 | 1e-3 | 5   | 7   | 70.1 | [GoogleDrive](https://drive.google.com/file/d/1RB8wP0Pf7bMv_iArYomVOfq1ikTsaA2O/view?usp=sharing)
+VGG-11     | 1 | 4 | 3e-3 | 8   | 15   | 59.6 | [GoogleDrive](https://drive.google.com/file/d/1dEsOcVxOmm8KTw3J3EwhPXeSABEP1TuN/view?usp=sharing)
+VGG-11-I   | 8 | 16| 3e-3 | 8   | 15   | 67.6 **+8.0** | [GoogleDrive](https://drive.google.com/file/d/1mIzuAv_cMTvaSEVRCF8OhS11Em7b-onB/view?usp=sharing)
 >models at max_epoch are reported
 
 >the numbers are different from the paper as they are independent running of the algorithm.
