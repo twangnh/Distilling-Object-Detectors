@@ -1,4 +1,4 @@
-# 🔥Updating🔥 Implementation of the CVPR2019 paper Distilling Object Detectors with Fine-grained Feature Imitation 
+# Implementation of the CVPR2019 paper Distilling Object Detectors with Fine-grained Feature Imitation 
 
 
 ![15\% performance boost of student model](https://github.com/twangnh/Distilling-Object-Detectors/blob/master/image.png)
@@ -7,6 +7,7 @@ We have proposed a general distillation approach for anchor based object detecti
 
 We release the code for distilling shufflenet based detector and **VGG11** based **Faster R-CNN**, this code repository implements **Faster R-CNN** imitation based on [pytorch-faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch). Check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet) for tensorflow code of Shufflenet based detector imitation.
 
+🔥Updating🔥
 ## TODO
 We have accumulated the following to-do list, which we hope to complete in the near future
 - Still to come:
