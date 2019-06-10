@@ -105,9 +105,8 @@ python test_net.py --dataset pascal_voc --net vgg11 --load_name ./path_to/xxx.pt
 ## Distilling ShuffleDet
 ...
 
-We have implemented a single layer one-stage toy object detector with tensorflow, and mutli-gpu training with cross-gpu batch normalization, check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet)
+We have implemented a single layer one-stage toy object detector with tensorflow, and mutli-gpu training with cross-gpu batch normalization, check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet) for codes
 
-###
 <table class="tg">
   <tr>
     <th class="tg-k19b" rowspan="2">Models</th>
