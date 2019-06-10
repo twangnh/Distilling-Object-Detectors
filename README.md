@@ -262,3 +262,6 @@ YOLOv2  | `190MB` | 87.2 | 74.6 | 36.0 |
   pages={4933--4942},
   year={2019}
 }
+```
+## License
+The code and the models are MIT licensed, as found in the LICENSE file.
