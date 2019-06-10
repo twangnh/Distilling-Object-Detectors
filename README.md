@@ -14,7 +14,6 @@ We have accumulated the following to-do list, which we hope to complete in the n
 - Still to come:
   * [ ] Add more models(ResNet-FRCNN, FPN-FRCNN).
   * [ ] Implement SSD model distillation.
-  * [ ] Combining the proposed method with model pruning/quantization method.
 
 ## Distilling VGG11-FRCNN
 pytorch 0.4.0 python2
