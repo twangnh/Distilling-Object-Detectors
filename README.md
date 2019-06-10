@@ -103,12 +103,11 @@ python test_net.py --dataset pascal_voc --net vgg11 --load_name ./path_to/xxx.pt
 ```
 
 ## Distilling ShuffleDet
-### Preparation
-Tensorflow 1.8.0
 ...
 
-We have implemented a single layer one-stage toy object detector with tensorflow, and mutli-gpu training with cross-gpu batch normalization
+We have implemented a single layer one-stage toy object detector with tensorflow, and mutli-gpu training with cross-gpu batch normalization, check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet)
 
+###
 <table class="tg">
   <tr>
     <th class="tg-k19b" rowspan="2">Models</th>
@@ -196,52 +195,52 @@ We have implemented a single layer one-stage toy object detector with tensorflow
     <td class="tg-k19b">0.25x</td>
     <td class="tg-k19b">0.67</td>
     <td class="tg-gom2">0.21</td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
+    <td class="tg-gom2">67.2</td>
+    <td class="tg-gom2">56.6</td>
+    <td class="tg-gom2">47.5</td>
+    <td class="tg-gom2">54.7</td>
+    <td class="tg-gom2">48.4</td>
+    <td class="tg-gom2">42.1</td>
+    <td class="tg-gom2">49.1</td>
+    <td class="tg-gom2">33.3</td>
+    <td class="tg-gom2">32.9</td>
+    <td class="tg-gom2">48.0</td>
+    <td class="tg-gom2"><a href="https://drive.google.com/file/d/1NLTUI7nJx6-6BjncxUx0nJ9vX5FqcS_C/view?usp=sharing">GoogleDrive</a></td>
   </tr>
   <tr>
     <td class="tg-k19b" rowspan="2">0.25x-I</td>
     <td class="tg-k19b" rowspan="2">0.67</td>
     <td class="tg-gom2" rowspan="2">0.21</td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
-    <td class="tg-gom2"></td>
+    <td class="tg-gom2">76.6</td>
+    <td class="tg-gom2">62.3</td>
+    <td class="tg-gom2">54.6</td>
+    <td class="tg-gom2">56.8</td>
+    <td class="tg-gom2">48.2</td>
+    <td class="tg-gom2">42.6</td>
+    <td class="tg-gom2">56.6</td>
+    <td class="tg-gom2">37.3</td>
+    <td class="tg-gom2">36.5</td>
+    <td class="tg-gom2">52.4</td>
+    <td class="tg-gom2"><a href="https://drive.google.com/file/d/18J350FX3MSTG5pgvXDXPfuvx0xxbDl1V/view?usp=sharing">GoogleDrive</a></td>
   </tr>
   <tr>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
-    <td class="tg-186s"></td>
+    <td class="tg-186s">+9.4</td>
+    <td class="tg-186s">+5.7</td>
+    <td class="tg-186s">+7.1</td>
+    <td class="tg-186s">+2.1</td>
+    <td class="tg-186s">-0.2</td>
+    <td class="tg-186s">+0.5</td>
+    <td class="tg-186s">+7.5</td>
+    <td class="tg-186s">+4.0</td>
+    <td class="tg-186s">+3.6</td>
+    <td class="tg-186s">+4.4</td>
     <td class="tg-186s"></td>
   </tr>
 </table>
 
 >models with highest mAP are reported for both baseline and distilled model
 
->the numbers are different from the paper as they are independent running of the algorithm and we have migrated from single GPU training to multi-gpu training with larger batch size.
+>**Note** the numbers are different from the paper as they are independent running of the algorithm and we have migrated from single GPU training to multi-gpu training with larger batch size.
 
 ## Distilling YoloV2
 
