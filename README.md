@@ -254,3 +254,13 @@ YOLOv2  | `190MB` | 87.2 | 74.6 | 36.0 |
 0.25x-I | `12MB`  | 83.9 **+5.7** | 74.9 **+5.1** | 38.5 **+2.9** |
 0.15x   | `4.4MB` | 69.7 | 61.1 | 29.7 |
 0.15x-I | `4.4MB` | 79.3 **+9.6** | 67.0 **+5.9** | 32.0 **+2.3** |
+
+## Citation
+```
+@inproceedings{wang2019distilling,
+  title={Distilling Object Detectors With Fine-Grained Feature Imitation},
+  author={Wang, Tao and Yuan, Li and Zhang, Xiaopeng and Feng, Jiashi},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={4933--4942},
+  year={2019}
+}
