@@ -1,10 +1,8 @@
-# Distilling Object Detectors with Fine-grained Feature Imitation 
-
-This repository is the implementation of our CVPR 2019 paper Distilling Object Detectors with Fine-grained Feature Imitation 
+# implementation of our CVPR 2019 paper Distilling Object Detectors with Fine-grained Feature Imitation
 
 ![15\% performance boost of student model](https://github.com/twangnh/Distilling-Object-Detectors/blob/master/intuition.PNG)
 
-We have proposed a general distillation approach for anchor based object detection model to get enhanced small student model with the knowledge of large teacher model, which is othorgonal and can be further combined with other model compression method like quantization and pruning.
+We have proposed a general distillation approach for anchor based object detection model to get enhanced small student model with the knowledge of large teacher model, which is othorgonal and can be further combined with other model compression method like quantization and pruning. The key observation of vanilla knowledge distillation technique is that the inter-class discrepancy of perdiction confidence reveals how curmbersome model tends to genearlize (e.g., how much confidence the model would put on cat label when the input is actually a dog). While our idea is the inter-location discrepancy of feature response near object also reveals how large detector tends to generalize (e.g., how is the model's response different for different near object anchor locations).
 
 We release the code for distilling shufflenet based detector and **VGG11** based **Faster R-CNN**, this code repository implements **Faster R-CNN** imitation based on [pytorch-faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch). Check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet) for tensorflow code of Shufflenet based detector imitation.
 
