@@ -2,7 +2,7 @@
 
 This repository is the implementation of our CVPR 2019 paper Distilling Object Detectors with Fine-grained Feature Imitation 
 
-![15\% performance boost of student model](https://github.com/twangnh/Distilling-Object-Detectors/blob/master/image.png)
+![15\% performance boost of student model](https://github.com/twangnh/Distilling-Object-Detectors/blob/master/intuition.PNG)
 
 We have proposed a general distillation approach for anchor based object detection model to get enhanced small student model with the knowledge of large teacher model, which is othorgonal and can be further combined with other model compression method like quantization and pruning.
 
