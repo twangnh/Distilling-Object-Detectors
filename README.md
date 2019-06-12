@@ -1,4 +1,4 @@
-# implementation of our CVPR 2019 paper Distilling Object Detectors with Fine-grained Feature Imitation
+# Implementation of our CVPR 2019 paper Distilling Object Detectors with Fine-grained Feature Imitation
 
 ![15\% performance boost of student model](https://github.com/twangnh/Distilling-Object-Detectors/blob/master/intuition.PNG)
 
