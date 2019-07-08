@@ -30,8 +30,8 @@ cd Distilling-Object-Detectors && mkdir data
 ```
 
 #### 2 Requirements
-pytorch
-pip install -r requirements.txt 
+
+`pip install -r requirements.txt`
 
 
 #### 3 Data preparation
