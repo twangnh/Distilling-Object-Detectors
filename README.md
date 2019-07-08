@@ -28,11 +28,17 @@ Then, create a folder:
 ```
 cd Distilling-Object-Detectors && mkdir data
 ```
-#### 2 Data preparation
+
+#### 2 Requirements
+pytorch
+pip install -r requirements.txt 
+
+
+#### 3 Data preparation
 
 * **PASCAL_VOC 07+12**: Please follow the instructions in [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn#beyond-the-demo-installation-for-training-and-testing-models) to prepare VOC datasets. Actually, you can refer to any others. After downloading the data, create softlinks in the folder data/. The prepaired direcoty is like data/VOCdevkit2007/VOC2007/...
 
-#### 3 download imagenet pretrained model and trained VGG16-FRCNN teacher model
+#### 4 download imagenet pretrained model and trained VGG16-FRCNN teacher model
 download imagenet pretrained VGG11 model at [GoogleDrive](https://drive.google.com/file/d/13Kvewg9FFg4EgIpRZeZPtIUllDiaE7aY/view?usp=sharing) and put it into data/pretrained_model/
 
 download trained VGG16-FRCNN model at [GoogleDrive](https://drive.google.com/file/d/1RB8wP0Pf7bMv_iArYomVOfq1ikTsaA2O/view?usp=sharing)
