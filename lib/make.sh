@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-CUDA_PATH=/home/wangtao/cuda-9.0
+CUDA_PATH=/home/wangtao/cuda-9.0. # change as your own cuda path
+
+export CXXFLAGS="-std=c++11"
+export CFLAGS="-std=c99"
 
 python setup.py build_ext --inplace
 rm -rf build
