@@ -29,9 +29,32 @@ Then, create a folder:
 cd Distilling-Object-Detectors && mkdir data
 ```
 
-#### 2 Requirements
+#### 2 Requirements and Compilation
 
 `pip install -r requirements.txt`
+
+Compile the cuda dependencies using following commands:
+
+```
+cd lib
+sh make.sh
+```
+
+To use the .py file in 'lib', you should add the 'lib' to PYTHONPATH, so open bashrc and add the path to the bashrc file:
+
+```
+vim ~/.bashrc
+```
+
+```
+export PYTHONPATH="${PYTHONPATH}:/the/lib/path/of/the/project"
+```
+
+After changing the bashrc file, update the bashrc by login again or directly update it by:
+
+```
+source ~/.bashrc
+```
 
 
 #### 3 Data preparation
