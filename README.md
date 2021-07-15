@@ -6,13 +6,12 @@ We have proposed a general distillation approach for anchor based object detecti
 
 We release the code for distilling shufflenet based detector and **VGG11** based **Faster R-CNN**, this code repository implements **Faster R-CNN** imitation based on [pytorch-faster-rcnn](https://github.com/jwyang/faster-rcnn.pytorch). Check [Distilling-ShuffleDet](https://github.com/twangnh/Distilling-Object-Detectors-Shuffledet) for tensorflow code of Shufflenet based detector imitation.
 
-🔥Updating🔥
-## TODO
+<!-- ## TODO
 We have accumulated the following to-do list, which we hope to complete in the near future
 - Still to come:
   * [ ] Add more models(ResNet-FRCNN, FPN-FRCNN).
   * [ ] Implement SSD model distillation.
-
+ -->
 ## Distilling VGG11-FRCNN
 pytorch 0.4.0 python2
 
